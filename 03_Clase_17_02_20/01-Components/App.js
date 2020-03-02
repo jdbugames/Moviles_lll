@@ -5,14 +5,16 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.box1}>
-        <Text style={styles.text}>Vista 1</Text>
+      <View style={styles.box3}></View>
+      <View style={styles.box4}></View>
       </View>
       <View style={styles.box2}>
-        <Text style={styles.text}>Vista 2</Text>
+      <View style={styles.box5}></View>
+      <View style={styles.box6}></View>
       </View>
-      <View style={styles.box3}>
-        <Text style={styles.text}>Vista 3</Text>
-      </View>
+     
+       
+      
     </View>
   );
 }
@@ -20,7 +22,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#FFFF33',
     flexDirection: "column"
   },
   text:{
@@ -28,14 +30,28 @@ const styles = StyleSheet.create({
   },
   box1:{
     flex: 1,
-    backgroundColor: '#ffff00'
+    backgroundColor: '#FF3C33',
+    flexDirection: "row"
   },
   box2:{
     flex: 1,
-    backgroundColor: '#2979ff'
+    backgroundColor: '#FF3C33',
+    flexDirection: "row"
   },
   box3:{
     flex: 1,
-    backgroundColor: '#d50000'
+    backgroundColor: '#FFFF33'
+  },
+  box4:{
+    flex: 1,
+    backgroundColor: '#3364FF'
+  },
+  box5:{
+    flex: 1,
+    backgroundColor: '#FF3C33'
+  },
+  box6:{
+    flex: 1,
+    backgroundColor: '#ffff'
   }
 });

@@ -14,7 +14,7 @@ if(costo > 3)
 }
 console.log("la comida: " + comida);
 
-for(var i=0; i<5; i++)
+for(var i=0; i<6; i++)
 {
     
 }
