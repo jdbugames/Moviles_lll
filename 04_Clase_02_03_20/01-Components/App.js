@@ -1,12 +1,15 @@
-import React from 'react';
-import { StyleSheet, Text, View, Image, TextInput} from 'react-native';
+import React, {useState} from 'react';
+import { StyleSheet, Text, View, Image, TextInput, Button, Alert} from 'react-native';
 
 export default function App() {
+  const saludo = () =>{Alert.alert("Hola Cesde")};
+  const [name, setName] = useState("");
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>{name}</Text>
       <Image style={styles.logo} source={require('./assets/login.png')}></Image>
-      <TextInput maxLength={5} style={styles.textInput} placeholder="Usuario"></TextInput>
+      <TextInput maxLength={5} style={styles.textInput} placeholder="Usuario" onChangeText={(text)=>setName(text)}></TextInput>
+      <Button title="Start" onPress={saludo}></Button>
     </View>
   );
 }
@@ -29,4 +32,5 @@ const styles = StyleSheet.create({
     width: 300,
     textAlign: 'center'
   }
+
 });
